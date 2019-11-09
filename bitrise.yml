@@ -88,7 +88,7 @@ workflows:
           inputs:
             - project_location: "$PROJECT_LOCATION"
             - module: "$MODULE"
-            - variant: "$VARIANT"
+            - variant: "release"
       - android-unit-test@1.0.0:
           inputs:
             - project_location: "$PROJECT_LOCATION"
