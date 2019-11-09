@@ -1,4 +1,3 @@
-# Android-boilerplate
-Boilerplate for Android projects
+# Android-boilerplate [![Build Status](https://app.bitrise.io/app/787b972ae003555a/status.svg?token=CuwBjtmrijPe7zOENGWMIQ)](https://app.bitrise.io/app/787b972ae003555a)
 
-https://app.bitrise.io/app/787b972ae003555a/status.svg?token=CuwBjtmrijPe7zOENGWMIQ&branch=master
+Boilerplate for Android projects
