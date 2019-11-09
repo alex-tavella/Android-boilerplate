@@ -1,2 +1,4 @@
 rootProject.name='Boilerplate'
 include ':app'
+include ':feature:dynamicfeature1'
+include ':feature:dynamicfeature2'

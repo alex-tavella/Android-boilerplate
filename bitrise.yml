@@ -103,7 +103,7 @@ app:
       PROJECT_LOCATION: "."
     - opts:
         is_expand: false
-      MODULE: app
+      MODULE: ''
     - opts:
         is_expand: false
       VARIANT: ''
