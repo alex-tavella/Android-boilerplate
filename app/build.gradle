@@ -4,39 +4,18 @@ apply plugin: 'kotlin-android-extensions'
 apply from: '../projectDependencyGraph.gradle'
 
 android {
-  defaultConfig {
-    applicationId "br.com.alex.boilerplate"
-    versionCode 1
-    versionName "1.0"
-  }
-  buildTypes {
-    release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    defaultConfig {
+        applicationId "br.com.alex.boilerplate"
+        versionCode 1
+        versionName "1.0"
     }
-  }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 
-  packagingOptions {
-    exclude 'META-INF/LICENSE*'
-  }
+    dynamicFeatures = [":feature:dynamicfeature1", ":feature:dynamicfeature2"]
 }
 
-dependencies {
-  implementation(Deps.androidx_core)
-  implementation(Deps.androidx_viewmodel_ktx)
-  implementation(Deps.androidx_lifecycle)
-  implementation(Deps.androidx_constraintlayout)
-  implementation(Deps.androidx_material)
-  implementation(Deps.androidx_recyclerview)
-  implementation(Deps.play_core_ktx)
-  implementation(Deps.coroutines)
-
-
-  testImplementation Deps.testlib_junit
-  testImplementation Deps.kotest
-
-  androidTestImplementation Deps.testandroidx_runner
-  androidTestImplementation Deps.testandroidx_rules
-  androidTestImplementation(Deps.testandroidx_espressocore)
-  androidTestImplementation Deps.kotest
-}
